@@ -89,6 +89,7 @@ Volatility Analysis evaluates the risk profile of the Axis Small Cap Mutual Fund
 In the peer comparison section, the performance of Axis Small Cap Mutual Fund is benchmarked against a set of peer funds. The analysis includes:
 - Growth Analysis (using absolute returns and CAGR).
 - Risk and Return Analysis (using Sharpe ratio and Sortino ratio).
+
 **Sharpe Ratio:**
 The Sharpe ratio measures the excess return of an investment (the return above a risk-free rate) relative to its total volatility. A higher Sharpe ratio indicates that the fund delivers better risk-adjusted returns.
 
