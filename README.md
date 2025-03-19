@@ -36,6 +36,9 @@ The primary data source for this analysis is the NSE historical data, which prov
 - **Matplotlib:**  
   A widely-used plotting library in Python that provides flexible tools for creating static, animated, and interactive visualizations. In this project, it is used for generating comparative line charts and other performance visualizations.
 
+- **Dash (Jupyter):**  
+  An interactive web application framework built on top of Flask, Plotly, and React.js. The Jupyter integration allows for the creation of interactive dashboards directly within Jupyter Notebook, enabling dynamic filtering and visualization of the mutual fund performance data.
+
 ---
 
 ## Disclaimer
