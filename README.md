@@ -1,26 +1,46 @@
 # Mutual Fund Analysis 
 
 In this project, we conducted a comprehensive analysis of a Axis Small Cap mutual fund using historical NAV data over a three-year period. We computed key performance and risk metrics—including daily returns, 
-cumulative returns, absolute returns, CAGR, Sharpe ratio, and Sortino ratio—to assess the fund's overall performance. These metrics were then benchmarked against a set of peer funds to evaluate relative performance 
-on a risk-adjusted basis.
+cumulative returns, absolute returns, CAGR, Sharpe ratio, and Sortino ratio—to assess the fund's overall performance. These metrics were then benchmarked against a set of peer funds to evaluate relative performance on a risk-adjusted basis.
 
 ---
 
 ## Table of Contents
 
 1. [Source of Data](#source-of-data)
-2. [Pre-Processing](#pre-processing)
-3. [Analysing Single Mutual Fund](#analysing-single-mutual-fund)
-4. [Portfolio Analysis](#portfolio-analysis)
-5. [Growth Analysis](#growth-analysis)
-6. [Volatility Analysis](#volatility-analysis)
-7. [Peer Comparison](#peer-comparison)
+2. [Main Libraries Used](#Main-Libraries-Used)
+3. [Disclaimer](#Disclaimer)
+4. [Pre-Processing](#pre-processing)
+5. [Analysing Single Mutual Fund](#analysing-single-mutual-fund)
+6. [Portfolio Analysis](#portfolio-analysis)
+7. [Growth Analysis](#growth-analysis)
+8. [Volatility Analysis](#volatility-analysis)
+9. [Peer Comparison](#peer-comparison)
 
 ---
 
 ## Source of Data
 
 The primary data source for this analysis is the NSE historical data, which provides detailed daily NAVs and other market information for mutual funds and indices.
+
+---
+
+## Main Libraries Used
+
+- **Mftool:**  
+  A Python library that retrieves mutual fund data directly from the AMFI API. It allows fetching historical NAV data and scheme details, which forms the backbone of our fund performance analysis.
+
+- **Yfinance:**  
+  A powerful library for downloading market data from Yahoo Finance. It is used to obtain indices and stock market information, making it easier to benchmark mutual fund performance against market indices.
+
+- **Matplotlib:**  
+  A widely-used plotting library in Python that provides flexible tools for creating static, animated, and interactive visualizations. In this project, it is used for generating comparative line charts and other performance visualizations.
+
+---
+
+## Disclaimer
+
+The analysis presented in this project is for educational and informational purposes only and should not be construed as investment advice. The data, calculations, and visualizations are based on historical information and are intended solely to illustrate various analytical techniques. Investors are encouraged to perform their own research and consult with professional financial advisors before making any investment decisions.
 
 ---
 
@@ -66,23 +86,10 @@ Volatility Analysis evaluates the risk profile of the Axis Small Cap Mutual Fund
 In the peer comparison section, the performance of Axis Small Cap Mutual Fund is benchmarked against a set of peer funds. The analysis includes:
 - Growth Analysis (using absolute returns and CAGR).
 - Risk and Return Analysis (using Sharpe ratio and Sortino ratio).
+**Sharpe Ratio:**
+The Sharpe ratio measures the excess return of an investment (the return above a risk-free rate) relative to its total volatility. A higher Sharpe ratio indicates that the fund delivers better risk-adjusted returns.
+
+**Sortino Ratio:**
+The Sortino ratio is a variation of the Sharpe ratio that focuses solely on downside risk by considering only the negative deviations from the risk-free rate. This ratio provides a more accurate measure of an investment’s risk-adjusted performance when returns are skewed or when investors are particularly concerned with losses.
+
 By comparing these metrics across funds, investors can identify which funds offer superior risk-adjusted returns and determine the overall efficiency of each fund's performance strategy.
-
----
-
-## Main Libraries Used
-
-- **Mftool:**  
-  A Python library that retrieves mutual fund data directly from the AMFI API. It allows fetching historical NAV data and scheme details, which forms the backbone of our fund performance analysis.
-
-- **Yfinance:**  
-  A powerful library for downloading market data from Yahoo Finance. It is used to obtain indices and stock market information, making it easier to benchmark mutual fund performance against market indices.
-
-- **Matplotlib:**  
-  A widely-used plotting library in Python that provides flexible tools for creating static, animated, and interactive visualizations. In this project, it is used for generating comparative line charts and other performance visualizations.
-
-- **Dash (Jupyter):**  
-  An interactive web application framework built on top of Flask, Plotly, and React.js. The Jupyter integration allows for the creation of interactive dashboards directly within Jupyter Notebook, enabling dynamic filtering and visualization of the mutual fund performance data.
-
-
-This repository contains all the scripts and notebooks used in the analysis, along with detailed visualizations and summary tables to support data-driven investment decisions.
