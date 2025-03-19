@@ -1,6 +1,6 @@
 # Mutual Fund Analysis 
 
-In this project, we conducted a comprehensive analysis of a Axis Small Cap mutual fund using historical NAV data over a three-year period. We computed key performance and risk metrics—including daily returns, 
+In this project, I conducted a comprehensive analysis of a Axis Small Cap mutual fund using historical NAV data over a three-year period. I computed key performance and risk metrics—including daily returns, 
 cumulative returns, absolute returns, CAGR, Sharpe ratio, and Sortino ratio—to assess the fund's overall performance. These metrics were then benchmarked against a set of peer funds to evaluate relative performance on a risk-adjusted basis.
 
 ---
